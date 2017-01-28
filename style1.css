@@ -23,6 +23,8 @@ html, body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  float: left;
+  margin-right: 20px;
 }
 
 .logo {
@@ -111,6 +113,14 @@ html, body {
   font-weight: bold;;
   color: black;
   float: light;
+  margin-bottom: 10px;
+}
+
+.messages {
+  background: gray;
+  height: 80%;
+  padding 10px;
+  overflow: auto;
 }
 
 .message {
@@ -118,4 +128,28 @@ html, body {
   color: white;
   padding: 10px;
   margin-bottom: 10px;
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.message.by-user {
+  background-color: darkgray;
+  text-align: right;
+}
+
+.chat-form {
+  position: fixed;
+  background-color: white;
+  left: 30%;
+  right: 0;
+  width: 70%;
+  padding: 10px;
+}
+
+.chat-message {
+  padding: 10px;
+  border: solid 1px orange;
+  border-radius: 4px;
+  width: 100%;
 }
