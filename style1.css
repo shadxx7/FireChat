@@ -1,15 +1,15 @@
 html, body {
     height: 100%;
     box-sizing: border-box;
-    font-family: "Roboto";
     font-size: 14px;
+    font-family: "Roboto Bold"
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-body {
+.homepage {
     background-image: url("/bgimg.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -26,16 +26,17 @@ body {
 }
 
 .logo {
-  font-style: italic;
-  font-size: 50px;
-  color: #ff3d00 ;
+  font-family: "Arkitech Medium";
+  font-size: 40px;
+  color: azure;
   margin-bottom: 10px;
   margin-top: 0;
 }
 
 .tagline {
+  font-family: "Roboto";
   font-size: 30px;
-  color: white;
+  color: azure;
 }
 
 .button {
@@ -50,4 +51,71 @@ body {
 .button:hover {
   background: white;
   color: blueviolet;
+}
+
+.member-area {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  background-color: black;
+}
+
+.userinfo{
+  background-color: black ;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+
+}
+
+.chatarea {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 30%;
+  width: 70%;
+  background-color: grey;
+}
+
+.primtext {
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.logout {
+  float: right;
+}
+
+.member {
+  padding: 10px;
+  color: white;
+}
+
+.member:hover {
+  background: #ffd54f;
+  color: black;
+  font-size: 17px;
+}
+
+.chatinfo {
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+.member-active {
+  background-color: azure;
+  font-weight: bold;;
+  color: black;
+  float: light;
+}
+
+.message {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
 }
