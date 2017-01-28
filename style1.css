@@ -8,5 +8,16 @@ html, body {
 }
 
 body {
-  background-image: url("/bgimg.jpg");
+    background-image: url("/bgimg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+  color: white;
+  width: 500px;
+  margin: auto;
+  
 }
