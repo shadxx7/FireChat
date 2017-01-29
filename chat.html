@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="style1.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css"/>
   <head>
       <title>
         FireChat-Chat
@@ -13,56 +13,42 @@
 <body>
   <div class="member-area">
     <div class="userinfo">
-      Mohamed Shadab
+      <img src="1.jpg" alt="" class="circle mate2" height="50" width="50">
+      <p class="membertext2"><span id="username"></span></p>
       <span class="glyphicon glyphicon-log-out logout" aria-hidden="true"></span>
     </div>
-    <div class="member">
-      Shady1
-    </div>
-    <div class="member">
-      Shady2
-    </div>
-    <div class="member">
-      <img src="1.jpg" alt="" class="circle mate2" height="50" width="50">
-      <p class="membertext">Shady3
-      <span class="badge mate">4</span>
-    </p>
-    </div>
-    <div class="member">
-      Shady4
-    </div>
-    <div class="member">
-      Shady5
-    </div>
+    <div id="member"></div>
   </div>
   <div class="chatarea">
     <div class="member-active">
       Shady
     </div>
-    <div class="messages">
-    <div class="message">
-      Hey !!!!!!!!!!!
-    </div>
-    <div class="message by-user">
-      Hey !!!!!!!!!!!
-    </div>
-    <div class="message">
-      Hey !!!!!!!!!!!
-    </div>
-    <div class="message by-user">
-      Hey !!!!!!!!!!!
-    </div>
-    <div class="message">
-      Hey !!!!!!!!!!!
-    </div>
-    <div class="message by-user">
-      Hey !!!!!!!!!!!
-    </div>
-  </div>
+    <div class="messages" id="messages"></div>
     <div class="chat-form">
-      <input type="text" class="chat-message"
-      placeholder="      Write your message and press enter......"/>
+      <input type="hidden" id="chat-id" />
+      <input id="message-text" type="text" class="chat-message"
+      placeholder="      Write your message and click send......"/>
+      <button class="btn waves-effect waves-light" type="submit" name="action" id="send-button"><i class="material-icons right">Send</i></button>
     </div>
   </div>
+
+  <!--FIREBASE INTIAL CODE-->
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCEYaf_ks6JCb3sZKfA1oecqPuRURfp3a0",
+        authDomain: "firechat-ffb7d.firebaseapp.com",
+        databaseURL: "https://firechat-ffb7d.firebaseio.com",
+        storageBucket: "firechat-ffb7d.appspot.com",
+        messagingSenderId: "421739021739"
+      };
+      firebase.initializeApp(config);
+    </script>
+  <!--END-->
+    <script type="text/javascript" src="function.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="chat.js"></script>
+
 </body
 </html>

@@ -20,8 +20,24 @@
     <p class="tagline">
       A Blazing fast chat application
     </p>
-    <a class="amber accent-4 waves-effect waves-light btn button" Id="signin">Sign in with Google</a>
+    <a class="amber accent-4 waves-effect waves-light btn button" Id="signIN">Sign in with Google</a>
   </div>
+<!--FIREBASE INTIAL CODE-->
+  <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCEYaf_ks6JCb3sZKfA1oecqPuRURfp3a0",
+      authDomain: "firechat-ffb7d.firebaseapp.com",
+      databaseURL: "https://firechat-ffb7d.firebaseio.com",
+      storageBucket: "firechat-ffb7d.appspot.com",
+      messagingSenderId: "421739021739"
+    };
+    firebase.initializeApp(config);
+  </script>
+<!--END-->
+  <script type="text/javascript" src="function.js"></script>
   <script type="text/javascript" src="app.js"></script>
+
 </body>
 </html>
