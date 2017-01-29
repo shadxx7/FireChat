@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     box-sizing: border-box;
     font-size: 14px;
-    font-family: "Roboto Bold"
+    font-family: "Roboto";
 }
 
 *, *:before, *:after {
@@ -19,12 +19,11 @@ html, body {
 
 .main {
   width: 500px;
-  margin: auto;
   position: relative;
   top: 50%;
+  left: 5%;
   transform: translateY(-50%);
   float: left;
-  margin-right: 20px;
 }
 
 .logo {
@@ -52,7 +51,7 @@ html, body {
 
 .button:hover {
   background: white;
-  color: blueviolet;
+  color: black;
 }
 
 .member-area {
@@ -61,15 +60,15 @@ html, body {
   bottom: 0;
   left: 0;
   width: 30%;
-  background-color: black;
+  background-color: #546e7a;
 }
 
-.userinfo{
-  background-color: black ;
+.userinfo {
   color: white;
-  font-size: 20px;
-  padding: 10px;
-
+  font-size: 14px;
+  padding: 13px;
+  background-color: #ffc107;
+  font-weight: bold;
 }
 
 .chatarea {
@@ -78,69 +77,82 @@ html, body {
   bottom: 0;
   left: 30%;
   width: 70%;
-  background-color: grey;
-}
-
-.primtext {
-  color: white;
-  font-size: 30px;
-  font-style: italic;
+  background-color: #f5f5f5;
 }
 
 .logout {
   float: right;
 }
 
+.mate {
+  float: right;
+  background-color: #ffc107 !important;
+  color: white !important;
+}
+
+.mate2 {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.membertext {
+  margin-top: 14px;
+}
+
 .member {
-  padding: 10px;
+  font-size: 20px;
+  padding: 20px;
+  height: 90px;
   color: white;
+  font-weight: bold;
 }
 
 .member:hover {
-  background: #ffd54f;
+  background: #f5f5f5;
   color: black;
-  font-size: 17px;
-}
-
-.chatinfo {
-  background-color: white;
-  color: black;
-  padding: 10px;
+  font-size: 20px;
 }
 
 .member-active {
-  background-color: azure;
-  font-weight: bold;;
-  color: black;
-  float: light;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  background-color: #ffc107;
+  color: white;
+  float: right;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  font-size: 30px;
+  padding: 30px;
+  font-weight: bold;
 }
 
 .messages {
-  background: gray;
+  margin-top: 10px;
+  background: #f5f5f5;
   height: 80%;
   padding 10px;
   overflow: auto;
 }
 
 .message {
-  background-color: orange;
+  background-color: #ffc107;
   color: white;
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 4px;
+  border-radius: 50px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .message.by-user {
-  background-color: darkgray;
+  background-color: #546e7a;
   text-align: right;
 }
 
 .chat-form {
   position: fixed;
-  background-color: white;
+  background-color: #f5f5f5;
   left: 30%;
   right: 0;
   width: 70%;
@@ -148,8 +160,33 @@ html, body {
 }
 
 .chat-message {
-  padding: 10px;
-  border: solid 1px orange;
-  border-radius: 4px;
-  width: 100%;
+  padding: 10px !important;
+  border: solid 1px orange !important;
+  border-radius: 50px !important;
+  width: 90% !important;
+  color: black !important;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate {
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+.my-element {
+    opacity: 0;
 }
