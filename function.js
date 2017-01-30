@@ -121,7 +121,7 @@ function renderMessage(message) {
   if (message.sender_id == window.currentUser.id){
     msgClass = "by-user";
   }
-  var  html = '<div class="' + msgClass + ' ' + message + '">' + text + '</div>';
+  var  html = '<div class="' + msgClass + ' message">' + text + '</div>';
 
   return html;
 }

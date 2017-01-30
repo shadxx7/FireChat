@@ -135,7 +135,7 @@ html, body {
 }
 
 .message {
-  background-color: #ffc107;
+  background: #ffc107;
   color: white;
   padding: 10px;
   margin-bottom: 10px;
@@ -162,7 +162,7 @@ html, body {
   padding: 10px !important;
   border: solid 1px orange !important;
   border-radius: 50px !important;
-  width: 90% !important;
+  width: 80% !important;
   color: black !important;
   margin-left: 10px;
 }
